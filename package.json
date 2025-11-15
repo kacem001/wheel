@@ -1,0 +1,21 @@
+{
+    "name": "wheel-of-fun",
+    "version": "1.0.0",
+    "description": "Lovely spinning wheel for movie and game nights",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "keywords": [
+        "wheel",
+        "spinner",
+        "game",
+        "movie"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.18.2",
+        "cors": "^2.8.5"
+    }
+}

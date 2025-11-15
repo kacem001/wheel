@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 Game Night 💕</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background-hearts"></div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <h1 class="logo">💑 Our Wheel of Fun</h1>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">🎬 Movie Night</a>
+                <a href="games.html" class="nav-link active">🎮 Game Night</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header-section">
+            <h2 class="page-title">🎮 Game Night Spinner 🕹️</h2>
+            <p class="subtitle">Time to pick our next gaming adventure! 🎯</p>
+        </div>
+
+        <div class="main-content">
+            <!-- Input Section -->
+            <div class="input-section">
+                <div class="input-card">
+                    <h3>📝 Add Games</h3>
+                    <div class="input-group">
+                        <input type="text" id="gameInput" placeholder="Enter game title..." class="cute-input">
+                        <button onclick="addGame()" class="btn-add">➕ Add</button>
+                    </div>
+                    <div class="games-list" id="gamesList"></div>
+                </div>
+            </div>
+
+            <!-- Wheel Section -->
+            <div class="wheel-section">
+                <div class="wheel-container">
+                    <div class="wheel-pointer"></div>
+                    <canvas id="wheelCanvas" width="500" height="500"></canvas>
+                    <div class="wheel-center">
+                        <div class="center-circle">🎮</div>
+                    </div>
+                </div>
+                <button onclick="spinWheel()" id="spinBtn" class="btn-spin">
+                    <span class="btn-text">🎪 SPIN THE WHEEL! 🎪</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Result Modal -->
+        <div id="resultModal" class="modal">
+            <div class="modal-content">
+                <div class="confetti"></div>
+                <h2 class="result-title">🎉 Let's Play 🎉</h2>
+                <div class="result-game" id="resultGame"></div>
+                <div class="modal-buttons">
+                    <button onclick="confirmChoice()" class="btn-done">✅ Done (Remove from list)</button>
+                    <button onclick="respin()" class="btn-respin">🔄 Respin</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="games.js"></script>
+</body>
+
+</html>

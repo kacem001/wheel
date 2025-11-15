@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Start - Our Wheel of Fun</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            color: #333;
+            padding: 30px;
+            border-radius: 20px;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            color: #667eea;
+        }
+
+        .step {
+            background: #f0f0f0;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+        }
+
+        code {
+            background: #333;
+            color: #0f0;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 5px 0;
+        }
+
+        .button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin: 10px 5px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>💕 Quick Start Guide 💕</h1>
+
+    <div class="card">
+        <h2>🚀 Start the Server</h2>
+        <p>Choose ONE method:</p>
+
+        <div class="step">
+            <strong>📘 Option 1: Python (Easiest)</strong><br>
+            <code>python -m http.server 8000</code><br>
+            Then open: <a href="http://localhost:8000">http://localhost:8000</a>
+        </div>
+
+        <div class="step">
+            <strong>💚 Option 2: Node.js</strong><br>
+            <code>npm install -g http-server</code><br>
+            <code>http-server -p 8000</code><br>
+            Then open: <a href="http://localhost:8000">http://localhost:8000</a>
+        </div>
+
+        <div class="step">
+            <strong>🔵 Option 3: VS Code</strong><br>
+            1. Install "Live Server" extension<br>
+            2. Right-click index.html<br>
+            3. Select "Open with Live Server"
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>📱 Access from Other Devices</h2>
+        <div class="step">
+            <strong>Step 1:</strong> Find your computer's IP address<br>
+            Windows: <code>ipconfig</code> (look for IPv4 Address)<br>
+            <br>
+            <strong>Step 2:</strong> On your phone/tablet, open:<br>
+            <code>http://YOUR-IP-ADDRESS:8000</code><br>
+            Example: <code>http://192.168.1.100:8000</code>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>✨ New Features</h2>
+        <ul>
+            <li>🎯 <strong>Sweet Arrow Pointer</strong> - Beautiful triangle with sparkles!</li>
+            <li>📊 <strong>Shared Data</strong> - Edit data.json to update lists on all devices</li>
+            <li>📱 <strong>Fully Responsive</strong> - Works perfectly on any screen size</li>
+            <li>💾 <strong>Auto-save</strong> - Lists are saved automatically</li>
+            <li>🎨 <strong>Smooth Animations</strong> - Confetti, bouncing, and more!</li>
+        </ul>
+    </div>
+
+    <div class="card center">
+        <h2>Ready to Start?</h2>
+        <a href="index.html" class="button">🎬 Movie Night</a>
+        <a href="games.html" class="button">🎮 Game Night</a>
+    </div>
+
+    <div class="card">
+        <h2>💡 Pro Tips</h2>
+        <ul>
+            <li>Edit <code>data.json</code> to pre-load movies and games</li>
+            <li>Bookmark the URL on your phones for quick access</li>
+            <li>Works offline after first load (uses localStorage as backup)</li>
+            <li>Try it in landscape mode on your phone!</li>
+        </ul>
+    </div>
+</body>
+
+</html>
